@@ -1,0 +1,47 @@
+{% load static %}
+
+<<!DOCTYPE html>
+</html>
+
+<head>
+  <title>eQuality</title>
+  <style type="text/css">
+    form {
+      text-align:  center;
+    }
+    img {
+
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://www.twilio.com/marketing/bundles/marketing/img/favicons/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+  <style>
+    .rounded-edges {
+      border-radius: 0.25rem;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero is-info">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <img src="{% static 'chat/images/logo.png' %}">
+        <h2 class="subtitle is-5">
+          </br>The best quality tutors for all students
+        </h2>
+      </div>
+    </div>
+  </section>
+    <form method="POST" action="/topics">
+        {% csrf_token %}
+        <p>My name is</p>
+        <input type="text" name="textfield">
+        <p>I am a</p>
+        <button type="submit">Student</button>
+        <button type="submit">Tutor</button>
+    </form>
+</body>
+</html>
