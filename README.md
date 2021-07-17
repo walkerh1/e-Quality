@@ -1,3 +1,4 @@
 # e-Quality
 A platform that pairs high quality tutors with disadvantaged students.
-Draws on code from (this)[https://github.com/kevgathuku/chat-django] open source project.
+
+Builds on [this](https://github.com/kevgathuku/chat-django) open source code, explained in [this](https://www.twilio.com/blog/2018/05/build-chat-python-django-applications-programmable-chat.html) Twilio blog.
